@@ -1,0 +1,53 @@
+@font-face{
+    font-family: "HardPixel";
+    src: url(../Font/Hardpixel.ttf) format("ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    background-image:url(../img/bg.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    color: #000;
+    font-family: "HardPixel", sans-serif;
+}
+
+.greeting{
+    background-color: #feffff;
+    opacity: 0.55;
+    border: 11px solid #000;
+}
+
+.main-title{
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 20px;
+
+    vertical-align: middle;
+    text-align: center;
+}
+
+.greeting p,
+.news p{
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.news{
+    background-color: #feffff;
+    opacity: 0.55;
+    border: 11px solid #000;
+    /*Временно, пока не будут 
+    вставлены pixel border*/
+}
+
+
+.news h3{
+    font-size: 43px;
+    line-height: 51px;
+}
