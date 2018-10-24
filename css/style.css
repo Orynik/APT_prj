@@ -4,7 +4,6 @@
     font-weight: 500;
     font-style: normal;
 }
-
 body{
     margin: 0;
     padding: 0;
@@ -26,7 +25,7 @@ body{
 
 .main-title{
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 200;
     line-height: 20px;
 
     vertical-align: middle;
@@ -36,7 +35,6 @@ body{
 .greeting p,
 .news p{
     font-size: 22px;
-    font-weight: 500;
     line-height: 36px;
 }
 
@@ -48,48 +46,8 @@ body{
     вставлены pixel border*/
 }
 
+
 .news h3{
     font-size: 43px;
     line-height: 51px;
-}
-
-body{
-    background-image: url(../img/Структура-не-заполненная.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0 ;
-
-    height: 1080px;
-    width: 2061px;
-}
-
-header{
-    background-color: gold;
-    height: 41px;
-
-    margin-bottom: 51px;
-}
-
-main{
-    height: 803px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-    padding-left: 169px;
-    padding-right: 168px;
-}
-
-.greeting{
-    width: 1077px;
-    height: 802px;
-    background-color: #000; 
-
-}
-
-.news{
-    width: 560px;
-    height: 802px;
-    background-color: #000;
-
 }
