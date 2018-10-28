@@ -1,6 +1,8 @@
 @font-face{
     font-family: "HardPixel";
-    src: url(../Font/Hardpixel.ttf) format("ttf");
+    src:url("../Font/Hardpixel.ttf") format("ttf"),
+        url("../Font/Hardpixel.woff") format("woff"),
+        url("../Font/Hardpixel.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
 }
@@ -8,7 +10,7 @@ body{
     margin: 0;
     padding: 0;
 
-    background-image:url(../img/bg.gif);
+    background-image:url("../img/bg.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -17,10 +19,39 @@ body{
     font-family: "HardPixel", sans-serif;
 }
 
+.button{
+    border: 1px solid black;
+}
+
+.main-header{
+    background-color: #feffff;
+    opacity: 0.55;
+    
+    height: 41px;
+
+    margin-bottom: 51px;
+}
+
+.container{
+    /* min-width: 1604px; */
+    height: 803px;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-left: 169px;
+    padding-right: 168px;
+}
+
 .greeting{
     background-color: #feffff;
     opacity: 0.55;
-    border: 11px solid #000;
+    border-top: 11px solid black;
+    border-bottom: 11px solid black;
+
+    margin-right: 10px;
+    flex-basis: 1000px;
+
+    position: relative;
 }
 
 .main-title{
@@ -36,18 +67,46 @@ body{
 .news p{
     font-size: 22px;
     line-height: 36px;
+    text-indent: 20px;
+}
+
+.greeting p{
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .news{
     background-color: #feffff;
     opacity: 0.55;
-    border: 11px solid #000;
-    /*Временно, пока не будут 
-    вставлены pixel border*/
+    border-top: 11px solid #000;
+    border-bottom: 11px solid #000;
+
+    flex-basis:525px;
+
+    margin-left: 10px;
+
+    
 }
 
 
 .news h3{
     font-size: 43px;
     line-height: 51px;
+}
+
+section::after,
+section::before{
+    content: '';
+    top: 0;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    background: black;
+}
+
+section::after{
+    right: -10px
+}
+section::before{
+    left: -10px;
 }
