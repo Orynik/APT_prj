@@ -19,21 +19,31 @@ body{
     font-family: "HardPixel", sans-serif;
 }
 
-.button{
-    border: 1px solid black;
+.antistress{
+    margin-left: 45%;
+    padding-left: 10px;
+    width: 250px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #7879b2;
+    color: #fff;
+    position: relative;
+}
+
+.antistress:hover{
+    background-color: #ad5db6;
 }
 
 .main-header{
     background-color: #feffff;
     opacity: 0.55;
-    
+
     height: 41px;
 
     margin-bottom: 51px;
 }
 
 .container{
-    /* min-width: 1604px; */
     height: 803px;
     display: flex;
     justify-content: space-evenly;
@@ -85,9 +95,22 @@ body{
 
     margin-left: 10px;
 
-    
+    position: relative;
 }
 
+.footer{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer--fox{
+    float: right;
+}
+
+.container-section--wrapper{
+    overflow-y: scroll;
+    height: 770px;
+}
 
 .news h3{
     font-size: 43px;
@@ -98,7 +121,7 @@ section::after,
 section::before{
     content: '';
     top: 0;
-    width: 10px;
+    width: 11px;
     height: 100%;
     position: absolute;
     background: black;
@@ -110,3 +133,5 @@ section::after{
 section::before{
     left: -10px;
 }
+
+/* Скролл бар */
