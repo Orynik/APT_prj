@@ -8,10 +8,11 @@
 }
 
 html{
-    height: 100%;
+    /* height: 100%; */
 }
 
 body{
+    height: 100%;
     margin: 0;
     padding: 0;
 
@@ -46,12 +47,12 @@ body{
 }
 
 .container{
-    height: 890px;
+    height: 550px;
     display: flex;
     justify-content: space-evenly;
 
-    margin-left: 169px;
-    margin-right: 168px;
+    margin-left: 135px;
+    margin-right: 135px;
     margin-top: 25px;
 }
 
@@ -61,18 +62,19 @@ body{
     border-top: 11px solid black;
     border-bottom: 11px solid black;
 
-    margin-right: 10px;
+    margin-right: 25px;
     width: 1100px;
+    height: 100%;
 
     position: relative;
 }
 
 .main-title{
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-top: 0px;
     padding-bottom: 10px;
 
-    font-size: 68px;
+    font-size: 55px;
     font-weight: 200;
     line-height: 65px;
 
@@ -87,7 +89,7 @@ body{
     margin-left: 35px;
     margin-right: 35px;
 
-    font-size: 29px;
+    font-size: 20px;
     line-height: 37px;
     text-indent: 20px;
     font-weight: 500;
@@ -99,7 +101,8 @@ body{
     border-top: 11px solid #000;
     border-bottom: 11px solid #000;
 
-    width: 560px;
+    width: 600px;
+    height: 100%;
 
     margin-left: 10px;
 
@@ -107,17 +110,17 @@ body{
 }
 
 .news h3{
-    margin-top: 35px;
+    margin-top: 0px;
     margin-bottom: 35px;
 
-    font-size: 47px;
+    font-size: 30px;
     line-height: 51px;
 }
 
 .news-list > li{
     padding-right: 40px;
 
-    font-size: 26px;
+    font-size: 20px;
     line-height: 30px;
     font-weight: 500;
 }
@@ -133,14 +136,20 @@ body{
 
 .footer--fox{
     position: fixed;
-    top: 72%;
-    right: 25px;
+    bottom: 11%;
+    right: 20px;
+
+    height: 170px; 
+    width: 140px;
 }
 
 .footer--enot{
     position: fixed;
-    top: 72%;
-    left: 25px;
+    bottom: 11%;
+    left: 20px;
+
+    height: 170px;
+    width: 180px;
 }
 
 section::after,
@@ -160,19 +169,39 @@ section::before{
     left: -10px;
 }
 
-@media screen and (max-width: 1500px){
-    body{
-        zoom: 0.65;
-    }
-}
+@media screen and (min-width: 1450px){ 
+.greeting{ 
+    width: 1200px; 
+    height: 100%; 
+} 
 
-@media screen and (min-width: 1900px){
-    body{
-        zoom: 0.8;
-    }
+.news{ 
+    width: 560px; 
+    height: 100%; 
+} 
 
-    .greeting{
-        width: 1200px;
-        height: 870px;
-    }
+.main-title{ 
+    font-size: 65px; 
+} 
+
+.container{ 
+    height: 700px; 
+} 
+
+.greeting p, 
+.news p{ 
+    font-size: 29px; 
+} 
+
+.footer--enot{ 
+    height: 170px; 
+    width: 190px; 
+    left: 10px; 
+} 
+
+.footer--fox{ 
+    height: 170px; 
+    width: 130px; 
+    right: 10px; 
+} 
 }
