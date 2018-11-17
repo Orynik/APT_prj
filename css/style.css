@@ -7,10 +7,6 @@
     font-style: normal;
 }
 
-html{
-    /* height: 100%; */
-}
-
 body{
     height: 100%;
     margin: 0;
@@ -111,7 +107,7 @@ body{
 
 .news h3{
     margin-top: 0px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 
     font-size: 30px;
     line-height: 51px;
@@ -152,7 +148,7 @@ body{
     width: 180px;
 }
 
-section::after,
+section::after,  /* пиксельная рамка */
 section::before{
     content: '';
     top: 0;
