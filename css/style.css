@@ -22,21 +22,6 @@ body{
     font-family: "HardPixel", sans-serif;
 }
 
-.antistress{
-    margin-left: 45%;
-    padding-left: 10px;
-    width: 250px;
-    height: 35px;
-    font-size: 18px;
-    background-color: #7879b2;
-    color: #fff;
-    position: relative;
-}
-
-.antistress:hover{
-    background-color: #ad5db6;
-}
-
 .container-section--scrolling{
     overflow-y: auto;
     height: 100%;
@@ -54,7 +39,7 @@ body{
 
 .greeting{
     background-color: #feffff;
-    opacity: 0.65;
+    opacity: 0.8;
     border-top: 11px solid black;
     border-bottom: 11px solid black;
 
@@ -63,6 +48,19 @@ body{
     height: 100%;
 
     position: relative;
+}
+
+.css_img{
+    float: left;
+}
+
+.html_img{
+    float: left;
+}
+
+.screen_resolution{
+    opacity: 1;
+    background-color: #000;
 }
 
 .main-title{
@@ -93,7 +91,7 @@ body{
 
 .news{
     background-color: #feffff;
-    opacity: 0.65;
+    opacity: 0.8;
     border-top: 11px solid #000;
     border-bottom: 11px solid #000;
 
