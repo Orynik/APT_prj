@@ -204,3 +204,13 @@ section::before{
     right: 10px; 
 } 
 }
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128,0.95);
+    background-repeat: no-repeat;
+    width: 2px;
+}
+    
+::-webkit-scrollbar{
+    width: 10px;
+}
